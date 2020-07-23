@@ -17,6 +17,7 @@ public class FizzBuzzTest {
         // then
         assertEquals("1", actual);
     }
+
     @Test
     void should_return_fizz_when_fizz_buzz_given_1() {
         // given
@@ -28,5 +29,18 @@ public class FizzBuzzTest {
 
         // then
         assertEquals("fizz", actual);
+    }
+
+    @Test
+    void should_return_buzz_when_fizz_buzz_given_5() {
+        // given
+        int number = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String actual = fizzBuzz.getFizzBuzzResult(number);
+
+        // then
+        assertEquals("buzz", actual);
     }
 }
