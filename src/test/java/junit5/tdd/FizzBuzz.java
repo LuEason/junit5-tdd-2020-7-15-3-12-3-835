@@ -1,29 +1,22 @@
 package junit5.tdd;
 
 public class FizzBuzz {
-    public static String getFizzBuzzResult(int number) {
-        if (number % 105 == 0) {
-            return "FizzBuzzWhizz";
-        }
-        if (number % 35 == 0) {
-            return "BuzzWhizz";
-        }
-        if (number % 21 == 0) {
-            return "FizzWhizz";
-        }
-        if (number % 15 == 0) {
-            return "FizzBuzz";
-        }
+    public String getFizzBuzzResult(int number) {
+        String result = "";
         if (number % 3 == 0) {
-            return "Fizz";
+            result += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            result += "Buzz";
         }
         if (number % 7 == 0) {
-            return "Whizz";
+            result += "Whizz";
         }
-        return String.valueOf(number);
+        if ("".equals(result)) {
+            result = String.valueOf(number);
+        }
+        return result;
     }
+
 
 }
