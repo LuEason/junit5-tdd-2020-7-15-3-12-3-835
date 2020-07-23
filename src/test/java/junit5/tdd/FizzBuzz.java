@@ -2,6 +2,9 @@ package junit5.tdd;
 
 public class FizzBuzz {
     public static String getFizzBuzzResult(int number) {
+        if (number % 21 == 0) {
+            return "fizzwhizz";
+        }
         if (number % 15 == 0) {
             return "fizzbuzz";
         }
