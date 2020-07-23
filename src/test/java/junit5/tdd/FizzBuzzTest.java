@@ -69,4 +69,17 @@ public class FizzBuzzTest {
         // then
         assertEquals("fizzbuzz", actual);
     }
+
+    @Test
+    void should_return_fizzwhizz_when_fizz_buzz_given_21() {
+        // given
+        int number = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String actual = fizzBuzz.getFizzBuzzResult(number);
+
+        // then
+        assertEquals("fizzwhizz", actual);
+    }
 }
