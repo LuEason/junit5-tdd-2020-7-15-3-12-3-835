@@ -19,7 +19,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_when_fizz_buzz_given_1() {
+    void should_return_Fizz_when_fizz_buzz_given_1() {
         // given
         int number = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -28,11 +28,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.getFizzBuzzResult(number);
 
         // then
-        assertEquals("fizz", actual);
+        assertEquals("Fizz", actual);
     }
 
     @Test
-    void should_return_buzz_when_fizz_buzz_given_5() {
+    void should_return_Buzz_when_fizz_buzz_given_5() {
         // given
         int number = 5;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -41,11 +41,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.getFizzBuzzResult(number);
 
         // then
-        assertEquals("buzz", actual);
+        assertEquals("Buzz", actual);
     }
 
     @Test
-    void should_return_whizz_when_fizz_buzz_given_7() {
+    void should_return_Whizz_when_fizz_buzz_given_7() {
         // given
         int number = 7;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -54,11 +54,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.getFizzBuzzResult(number);
 
         // then
-        assertEquals("whizz", actual);
+        assertEquals("Whizz", actual);
     }
 
     @Test
-    void should_return_fizzbuzz_when_fizz_buzz_given_15() {
+    void should_return_FizzBuzz_when_fizz_buzz_given_15() {
         // given
         int number = 15;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -67,11 +67,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.getFizzBuzzResult(number);
 
         // then
-        assertEquals("fizzbuzz", actual);
+        assertEquals("FizzBuzz", actual);
     }
 
     @Test
-    void should_return_fizzwhizz_when_fizz_buzz_given_21() {
+    void should_return_FizzWhizz_when_fizz_buzz_given_21() {
         // given
         int number = 21;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -80,6 +80,6 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.getFizzBuzzResult(number);
 
         // then
-        assertEquals("fizzwhizz", actual);
+        assertEquals("FizzWhizz", actual);
     }
 }

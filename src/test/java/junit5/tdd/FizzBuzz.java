@@ -3,19 +3,19 @@ package junit5.tdd;
 public class FizzBuzz {
     public static String getFizzBuzzResult(int number) {
         if (number % 21 == 0) {
-            return "fizzwhizz";
+            return "FizzWhizz";
         }
         if (number % 15 == 0) {
-            return "fizzbuzz";
+            return "FizzBuzz";
         }
         if (number % 3 == 0) {
-            return "fizz";
+            return "Fizz";
         }
         if (number % 5 == 0) {
-            return "buzz";
+            return "Buzz";
         }
         if (number % 7 == 0) {
-            return "whizz";
+            return "Whizz";
         }
         return String.valueOf(number);
     }
